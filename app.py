@@ -48,9 +48,7 @@ if st.button('Predict'):
     vector_input = tfidf.transform([transformed_sms])
     # 3. predict
     result = model.predict(vector_input)[0]
-    result1 = model.predict(vector_input)
 
-    st.header(result1)
 
     # 4. Display
     if result == 1:
